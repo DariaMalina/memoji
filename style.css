@@ -38,10 +38,28 @@ body {
     height: 130px;
 }
 
-.back {
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
+.front {
+    border-radius: 9px;
+    border: 5px solid white;
+    display: none;
+    width: 130px;
+    height: 130px;
 }
+
+.back {
+    border-radius: 9px;
+    border: 5px solid white;
+    transform: rotateY(180deg) translateZ(0.1px);
+    background: white;
+    backface-visibility: hidden;
+    display: flex;
+    width: 130px;
+    height: 130px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 :checked + .card {
     transform: rotateY(180deg);
 }
