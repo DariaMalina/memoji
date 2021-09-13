@@ -79,3 +79,133 @@ body {
 .two-dimensional {
     display: contents;
 }
+
+.block {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(67, 67, 68, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.gap {
+    border-radius: 9px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 350px;
+    padding: 0 30px;
+
+    align-items: center;
+}
+
+.clock {
+    font-size: 48px;
+    font-family: Arial,sans-serif;
+    color: #434344;
+}
+
+.gap__p {
+    display: flex;
+    color: #434344;;
+    font-size: 48px;
+    margin: 40px;
+}
+
+.span1 {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+
+}
+
+
+.span2 {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+}
+
+
+.span3 {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+}
+
+
+.span4 {
+    display: block;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: bounce;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0) scale(1, 1.5);
+        transition: all 2s ease-in;
+    }
+    25% {
+
+        transform: translateY(4px) scale(1, 1);
+        transition: all 2s ease-in;
+    }
+    50% {
+        transform: translateY(14px) scale(1, 1.5);
+        transition: all 2s ease-in;
+    }
+    75% {
+        transform: translateY(4px) scale(1, 2);
+        transition: all 2s ease-in;
+    }
+    100% {
+        transform: translateY(0) scale(1, 1.5);
+        transition: all 2s ease-in;
+    }
+
+}
+
+.gap__button {
+    width: 70%;
+    color: #CFD0CF;
+    background: linear-gradient(
+            200deg, rgba(25, 102, 141, 1) 0%, rgba(34, 171, 147, 1) 97%);
+    border-radius: 9px;
+    border: none;
+    box-shadow: 1px 1px 1px #434344;
+    font-size: 20px;
+    height: 40px;
+    margin-bottom: 30px;
+cursor: pointer;
+}
